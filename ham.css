@@ -75,3 +75,19 @@ header {
     display: flex;
   }
 }
+/* Hamburger animation */
+.hamburger.toggle div:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.toggle div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.toggle div:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.hamburger div {
+  transition: all 0.3s ease;
+}
